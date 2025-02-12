@@ -1,0 +1,22 @@
+// lib/models/motel.dart
+
+class Motel {
+  final String name;
+  final String price;
+  final String imageUrl;
+
+  Motel({
+    required this.name,
+    required this.price,
+    required this.imageUrl,
+  });
+
+  // Método para converter JSON em objeto Motel
+  factory Motel.fromJson(Map<String, dynamic> json) {
+    return Motel(
+      name: json['name'] ?? 'Sem Nome',
+      price: json['price'] ?? 'Sem preço',
+      imageUrl: json['imageUrl'] ?? '',
+    );
+  }
+}

@@ -1,0 +1,20 @@
+name: guia_de_moteis  # O nome do seu projeto deve ser especificado aqui
+description: Um novo aplicativo Flutter
+
+# Versão do SDK do Dart e Flutter
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2   # Atualize para a versão recomendada
+  http: ^1.3.0      # Atualize para a versão recomendada
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
